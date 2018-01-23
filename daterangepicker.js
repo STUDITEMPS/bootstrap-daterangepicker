@@ -346,10 +346,10 @@
 
             var list = '<ul>';
             for (range in this.ranges) {
-                list += '<li data-range-key="' + range + '"><button class="a-button">' + range + '</button></li>';
+                list += '<li data-range-key="' + range + '" class="a-link">' + range + '</li>';
             }
             if (this.showCustomRangeLabel) {
-                list += '<li data-range-key="' + this.locale.customRangeLabel + '"><button class="a-button">' + this.locale.customRangeLabel + '</button></li>';
+                list += '<li data-range-key="' + this.locale.customRangeLabel + '" class="a-link">' + this.locale.customRangeLabel + '</li>';
             }
             list += '</ul>';
             this.container.find('.ranges').prepend(list);
